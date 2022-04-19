@@ -1,0 +1,15 @@
+rsencoder_n_iters: 5
+
+data_path : "/datasets/FFHQ"
+
+directions_factor: 2
+
+checkpoint_path: "./pretrained/restyle_e4e_ffhq_encode.pt"
+
+classifier: 
+  CKPT: "./models/attribute_classifier/BranchedTiny.ckpt"
+
+directions: "./pretrained/boundaries_anycost-ffhq-config-f.pt"
+
+attributes: ""
+  
