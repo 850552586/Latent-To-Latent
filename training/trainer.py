@@ -2,7 +2,6 @@ import sys
 sys.path.append(".")
 sys.path.append("..")
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 from utils.latent_utils import get_latent
 from PIL import Image,ImageDraw
 from datasets.img_dataset import load_data
@@ -74,7 +73,7 @@ def train(args):
             best_model_loss = eval_loss_sum
             print("epoch-{} get lower loss!Save it now!".format(epoch))
             torch.save(latent_model.state_dict(),'{}/latent_model.pt'.format(args.exp_dir))
-    writer.flush() #清空缓冲区，全部写入
+    writer.flush() 
     writer.close()
 
 def train_imgs_batch(imgs,t_model,latent_model,mtcnn,resnet,configs,save_path=None,train=True,i=0,device="cpu"):

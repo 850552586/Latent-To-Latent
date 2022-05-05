@@ -33,12 +33,16 @@ I have trained smile and bushy_eyebrows attributes on FFHQ dataset. The remainin
 
 ```shell
 python trainer.py \
---exp_dir ffhq
+--exp_dir ./ffhq
 --attribute young
 --gpu 0
 --epoch 10
 --batch_size 8
 ```
+
+The kind of attribute which you can train depand on the attribute_classifier.
+
+attribute documentation : [attribute documentation](https://github.com/850552586/Latent-To-Latent/tree/main/training/attributes_list.md)
 
 ## Testing
 
@@ -49,8 +53,8 @@ python inference.py \
 --attribute smiling \
 --gpu 0 \
 --ckpt ./pretrained/smiling.pt \
---exdir /home/xujiamu/data/tmp \
---savedir /home/xujiamu/data/result
+--exdir ./expir \
+--savedir ./result
 ```
 
 ## Other
