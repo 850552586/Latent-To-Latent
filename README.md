@@ -42,7 +42,7 @@ python trainer.py \
 
 The kind of attribute which you can train depand on the attribute_classifier.
 
-attribute documentation : [attribute documentation](https://github.com/850552586/Latent-To-Latent/tree/main/training/attributes_list.md)
+attribute documentation : [attribute documentation](https://github.com/850552586/Latent-To-Latent/blob/main/models/attribute_classifier/attributes_list.md)
 
 ## Testing
 
